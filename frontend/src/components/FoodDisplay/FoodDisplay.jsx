@@ -2,8 +2,9 @@ import { useContext } from 'react'
 import './FoodDisplay.css'
 import { StoreContext } from '../../Context/StoreContext'
 import FoodItem from '../FoodItem/FoodItem'
+import PropTypes from 'prop-types'; 
 
-const FoodDisplay = () => {
+const FoodDisplay = ({category}) => {
     const {food_list}=useContext(StoreContext)
   return (
     <div className='food-display' id='food-display'>
@@ -14,16 +15,26 @@ const FoodDisplay = () => {
             {
               food_list.map((item,index)=>
                 {
-                    return<FoodItem key={index}
-                 id={item.id}
-                 name={item.name}
-                  description={item.description}
-                   price={item.price} 
-                   image={item.image} 
-            />})}
+                  
+                   if(category==="All" || category===item.category)
+                    {
+                      return<FoodItem key={index}
+                      id={item._id}
+                      name={item.name}
+                      description={item.description}
+                      price={item.price} 
+                      image={item.image} 
+                      />}
+                    }
+                    )}
         </div>
     </div>
   )
 }
 
 export default FoodDisplay
+
+FoodDisplay.propTypes = {
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired
+};
