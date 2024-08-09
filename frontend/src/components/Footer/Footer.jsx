@@ -16,10 +16,10 @@ const Footer = () => {
             <div className="footer-content-centre">
                 <h2>COMPANY</h2>
                 <ul>
-                    <l>Home</l>
-                    <l>About us</l>
-                    <l>Delivery</l>
-                    <l>Privacy Policy</l>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Delivery</li>
+                    <li>Privacy Policy</li>
                 </ul>
             </div>
             <div className="footer-content-right">
