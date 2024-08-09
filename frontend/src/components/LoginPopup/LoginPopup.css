@@ -65,12 +65,12 @@
 } */
 
 .login-popup {
-    position: absolute;
+    position: fixed;
     z-index: 1;
     animation: smooth;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Add opacity for better visibility */
+    background-color: rgba(0, 0, 0, 0.9); /* Add opacity for better visibility */
     display: grid;
     place-items: center; /* Center the popup */
 }
