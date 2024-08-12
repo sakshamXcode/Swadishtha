@@ -5,14 +5,13 @@
     align-items: centre;
     justify-content: space-between;
   
-  
+/*   
     position:sticky;
     z-index:40;
-    top:0;
+    top:0; */
+
     background-color: white;
-    border-radius: 0px 0px 20px 20px;
-    
-    
+    border-radius: 0px 0px 20px 20px;    
 }
 .navbar .logo{
     width:130px;
